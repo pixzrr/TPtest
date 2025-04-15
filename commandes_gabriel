@@ -25,3 +25,15 @@ nano style.css
 git add *
 git commit -m "ajout du css"
 git push -u origin gabriel
+
+## Merge des branches
+
+git checkout master
+git pull origin master
+git merge gabriel
+
+git checkout gabriel
+git pull origin gabriel
+git merge master
+
+git push -u origin master
