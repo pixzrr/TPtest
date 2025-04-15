@@ -37,3 +37,11 @@ git pull origin gabriel
 git merge master
 
 git push -u origin master
+
+## Amelioration du html + merge des branches
+
+nano index.html
+#je modifie le fichier
+git commit -m "amelioration du html"
+git push -u origin gabriel
+
