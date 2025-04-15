@@ -1,0 +1,27 @@
+# Commandes utilisées par Gabriel
+
+## Configuration et premier commit
+
+git init
+git remote add origin "https://github.com/pixzrr/TPtest.git"
+git config user.email "<mon mail>"
+git config user.name "pixzrr"
+
+nano README.md
+#j'écris les infos dans le fichier
+touch .gitignore
+touch LICENCE
+
+git add *
+git commit -m "je ne sais plus quel message j'ai mis"
+git push -u origin mater
+#Je rentre mon username + mon token
+
+## Création de ma branche et deuxième commit
+
+git checkout -b gabriel
+nano style.css
+#je remplie le fichier
+git add *
+git commit -m "ajout du css"
+git push -u origin gabriel
