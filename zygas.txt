@@ -20,3 +20,19 @@ git branch master
 git merge chayan
 git push -u origin master 
 
+git checkout chayan 
+git pull origin master
+ 
+git add * 
+git commit -m "modification du mobile"
+ 
+git push -u origin chayan 
+git checkout master
+ 
+git merge chayan 
+git push -u origin master
+ 
+git pull origin master
+git add *
+git commit -m "modification des pages"
+git push -u origin master
