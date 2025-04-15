@@ -75,4 +75,4 @@ git push -u add origin gabriel
 
 git checkout master
 git merge gabriel
-git push -u add origin master
+git push -u origin master
