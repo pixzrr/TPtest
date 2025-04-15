@@ -1,0 +1,7 @@
+@media screen and (max-width:600px){
+
+    article,
+     main,
+      section,
+      footer{width:100%;}
+}
