@@ -1,0 +1,56 @@
+git clone https://github.com/pixzrr/TPtest.git
+
+cd TPtest/
+
+git branch julien
+git checkout julien
+
+nano mibile.css
+
+git config user.email "julienricardobaltazar@gmail.com"
+git config user.name "HAuSone"
+git add mobile.css
+git commit -m "version mobile"
+
+git push -u  julien
+
+git checkout master
+git merge julien
+git push -u origin master
+
+git checkout julien
+git merge master
+
+nano style.css
+
+git add style.css
+git commit -m " modification du css ajout de style pour le h1 et la navigation"
+
+git push -u origin julien
+git checkout master
+git merge julien
+git push -u origin master
+
+
+
+
+nano page_2.html
+
+git add  page_2.html
+git commit -m " ajout de la page projet"
+
+git push -u origin julien
+git checkout master
+git merge julien
+git push -u origin master
+
+
+git checkout julien
+git nano ricardo_baltazar.txt
+git add ricardo_baltazar.txt
+git commit -m "mes commande"
+
+git push -u origin julien
+git checkout master
+git merge julien
+git  push -u origin master
