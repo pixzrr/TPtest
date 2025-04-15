@@ -1,0 +1,78 @@
+# Commandes utilisées par Gabriel
+
+## Configuration et premier commit
+
+git init
+git remote add origin "https://github.com/pixzrr/TPtest.git"
+git config user.email "<mon mail>"
+git config user.name "pixzrr"
+
+nano README.md
+#j'écris les infos dans le fichier
+touch .gitignore
+touch LICENCE
+
+git add *
+git commit -m "je ne sais plus quel message j'ai mis"
+git push -u origin mater
+#Je rentre mon username + mon token
+
+## Création de ma branche et deuxième commit
+
+git checkout -b gabriel
+nano style.css
+#je remplie le fichier
+git add *
+git commit -m "ajout du css"
+git push -u origin gabriel
+
+## Merge des branches
+
+git checkout master
+git pull origin master
+git merge gabriel
+
+git checkout gabriel
+git pull origin gabriel
+git merge master
+
+git push -u origin master
+
+## Amelioration du html + merge des branches
+
+nano index.html
+#je modifie le fichier
+git commit -m "amelioration du html"
+git push -u origin gabriel
+
+git checkout master
+git merge gabriel
+git push -u origin master
+
+## Création de la page 3 en html + merge
+
+git checkout gabriel
+nano page_3.html
+#je modifie mon fichier
+git add * (je pourrai ajouter que page_3.html mais seuls les fichiers modifiés sont ajoutés par défaut)
+git commit -m "creation page_3.html"
+git push -u origin gabriel
+
+git checkout master
+git pull origin master (quand je fais un pull c'est que le master du github a été modifié, donc je récupère les modifs faites)
+git merge gabriel
+git push -u origin maste
+
+## Dernière modif des notes + merge
+
+git checkout gabriel
+nano portier.txt
+#je modifie mon fichier
+rm commandes_portier
+git add *
+git commit -m "dernière modif de portier.txt"
+git push -u add origin gabriel
+
+git checkout master
+git merge gabriel
+git push -u add origin master
