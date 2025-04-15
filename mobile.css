@@ -4,4 +4,12 @@
      main,
       section,
       footer{width:100%;}
+
+      h1{
+        width : 33%;
+      }
+
+      nav{
+        display: none;
+      }
 }
