@@ -1,0 +1,22 @@
+git clone https://github.com/pixzrr/TPtest.git
+cd TPtest
+
+git init 
+git remote add origin "https://github.com/pixzrr/TPtest.git"
+
+git config user.email "chayanzygas@gmail.com"
+git config user.name "ZleiVV"
+
+git branch chayan
+git chekout chayan
+
+git add index.html
+git commit -m "ajout du index.html"
+
+git push -u origin chayan 
+
+git branch master 
+
+git merge chayan
+git push -u origin master 
+
